@@ -1,1 +1,15 @@
+A local animal shelter needs a reliable and scalable low-cost feeder that 
+would work for cats and dogs through a built-in container that stores dog food in one half and cat food in the other half. 
+The feeder should dispense food that has been pre-portioned by the user at a designated time. 
+The feeder should also detect whether the pet has consumed the food and the amount of food through two distinct levels of beep sound.
+If the system generates three beeps, then it means the pet had consumed the entire food while one beep signifies there is remaining food. 
+This mechanism uses a weighting scale system which tracks the weight of the food in the bowl as the pet consumes it. 
+Implementing this mechanism focuses on building a low-cost machine which aligns with the goal, hence low-cost components 
+like weight sensors and IR sensors to detect the presence of objects is ideal. 
+
+
+If the machine does not dispense any food when it is supposed to, then it will display red triangle warning sign. 
+Upon seeing this warning, users will be responsible for identifying and solving the issue that falls under three categories.
+The first category is that there is no food left in the system to dispense, second being a blocked rotate motor, 
+and the third category is a broken machine that would need maintenance. 
 
