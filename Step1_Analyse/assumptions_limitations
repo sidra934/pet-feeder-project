@@ -1,1 +1,17 @@
+The type and amount of pet food required depends on a range of factors, 
+including weight, height, age, activity level, breed, species, and any underlying health conditions.
+Therefore, one limitation is that cats and dogs require diverse types of food depending on the factors 
+stated but the feeder only stores one type of dog and cat food as the logic focuses on single-bowl behaviour. 
+For example, one pet diet might consist of dry food while the other consists of wet food. 
 
+Another assumption is that if the budget cost was higher, then programming a smartphone app that connects to
+the feeder system via Bluetooth would have been an excellent feature. This system would send notifications 
+about the amount of pet food consumed and to manage scheduled feeding time. 
+The outcome would be a more flexible, energy efficient, enhanced user experience. 
+
+Thirdly, the machine only feeds one pet at a time, hence users need to schedule feeding time 
+exclusively to avoid overlapping. The system is assumed to store only a small set of feeding schedules 
+due to hardware constraints and overlaps. Additionally, the higher number of pets feeding schedule is 
+dependent on the machine, the more likely the food storage bin needs to be frequently refilled. 
+This compromises the efficiency of an automated feeding machine. Lastly, the feeder needs to have 
+sufficient access to reliable power supply or battery backup, otherwise, it would fail to operate as intended. 
