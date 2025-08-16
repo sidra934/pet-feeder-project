@@ -1,1 +1,37 @@
+# Automated pet feeder logic for a local Animal shelter  
+foodTimeCat1 = (8:00, 18:00)
+foodTimeDog1 = (9:00, 14:00)
+foodPortionCat1 = (25g, 25g)
+foodPortionDog1 = (100g, 100g)
+currentTime = Canberra AEST
+foodSensorDetect = 0 +/- 5g of food
+bowlWeight = on 
+Wait10Minutes = 10 minutes timer
+foodBinCat = 6L
+foodBinDog = 6 L
+While system is ON
+# Checks cat feeding times and food storage
+if currentTime = foodTimeCat1 AND NOT foodTimeDog1 
+	foodBinCat not = 0 
+		dispense (foodPortionCat1)
+# Checks dog feeding times and food storage 
+if currentTime = foodTimeDog1 AND NOT foodTimeCat1
+	foodBinDog not = 0 
+		dispense (foodPortionDog1)
+# Checks dispense failure
+Activate rotateMotor = Warning 
+problemFixed AND again check food is available in storage. 
+dispense foodPortionCat1 OR foodPortionDog1.
+# Checks food consumption level
+Wait10Minutes
+If bowlWeight = foodSensorDetect
+		3Beeps
+bowlWeight > not foodSensorDetect
+		1Beep 
+# Checks if pet wants to continue eating
+continueEating = True 
+Wait10Minutes 
+SystemOff
+continueEating = False
+SystemOff
 
