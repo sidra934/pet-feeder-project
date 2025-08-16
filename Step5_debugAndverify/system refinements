@@ -1,1 +1,18 @@
+Test no. 3 
+In test no.3, the system logic does not account for scenarios where weight sensor may malfunction. 
+To minimize this error and enhance reliability, the system could be refined to include a fail-safe dispense logic. 
+For example, if a sensor malfunction happens then the system could default to a safe dispensing amount or 
+pause operation until human interaction as this would prevent overfeeding or underfeeding. 
+
+Test no.4  
+The current logic for checking if food storage is full or not by using the condition not = 0. 
+However, this logic is insufficient because it does not consider cases where the remaining food is 
+less than the portion size. For instance, if portion size is 25 grams but only 10 grams is left then
+the logic will not consider it as a warning because by the condition not = 0, 10 grams is greater than 0 grams.
+Therefore, the logic should instead generate a warning when the remaining food in the storage is less than the pre-set portion size.
+
+Test no.8 
+Lastly, an improvement would be to display real-time weight changes from the sensor bowl on the screen interface. 
+This feature would allow users to verify accurate amount of food is dispensed and provide visibility 
+to how much food is left supported by the existing three-beep and 1-beep audio notification system. 
 
