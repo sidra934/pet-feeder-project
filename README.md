@@ -13,16 +13,8 @@ Features
 System features:
 
 Input: 
-       Real-time clock to schedule feeding 
-       
-       weight sensor under the bowl for food consumption tracking
-       
-       Food storage sensor 
+       Real-time clock to schedule feeding, weight sensor under the bowl for food consumption tracking, Food storage sensor 
 
 Output:
-       motor rotation 
-       
-       audio notification 
-       
-       screen interface 
+       motor rotation, audio notification, screen interface 
        
